@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/osboxes/catkin_ws/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/osboxes/catkin_ws/src/3AxisArm/include",
+        "/home/osboxes/catkin_ws/src/navbotSim/turtlebot3_simulations/turtlebot3_fake/include",
+        "/home/osboxes/catkin_ws/src/navbotSim/turtlebot3_simulations/turtlebot3_gazebo/include",
+        "/home/osboxes/catkin_ws/src/navbotSim/turtlebot3_slam/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}
