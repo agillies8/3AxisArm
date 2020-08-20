@@ -1,6 +1,5 @@
 #include <ros.h>
 #include <std_msgs/String.h>
-#include <std_msgs/Int16.h>
 
 #define BUTTON1 8
 #define BUTTON2 9
@@ -36,15 +35,13 @@ void loop()
     button_msg_1.data = "NOT pressed";
   }
 
-  button_publisher_1.publish( &button_msg_1 );
-  node_handle.spinOnce();
-
     if (digitalRead(BUTTON2) == HIGH) {
     button_msg_2.data = "Pressed";
   } else {
     button_msg_2.data = "NOT pressed";
   }
-
+  
+  button_publisher_1.publish( &button_msg_1 );
   button_publisher_2.publish( &button_msg_2 );
   node_handle.spinOnce();
   

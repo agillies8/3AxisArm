@@ -1,6 +1,5 @@
 #include <ros.h>
 #include <std_msgs/String.h>
-#include <std_msgs/UInt16.h>
 
 #define BUTTON 8
 
@@ -21,7 +20,7 @@ void setup()
 void loop()
 { 
   if (digitalRead(BUTTON) == HIGH) {
-    button_msg.data = "Pressed";
+    button_msg.data = "IM PRESSING THE BUTTON!!!!";
   } else {
     button_msg.data = "NOT pressed";
   }

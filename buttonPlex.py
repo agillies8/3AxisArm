@@ -16,7 +16,6 @@ def btn1_callback(msg):
         rospy.loginfo('Button 1 was pressed with following message: ' +  msg.data)
         b1_val  = 1
         
-
 def btn2_callback(msg):
     global b2_val
     btn2=msg.data
@@ -31,8 +30,7 @@ if __name__=='__main__':
    
     sub1=rospy.Subscriber('button_press_1', String, btn1_callback)
     sub2=rospy.Subscriber('button_press_2', String, btn2_callback)
-
-
+    
     pub=rospy.Publisher('button_counter', Int32, queue_size=1)
     rate=rospy.Rate(10)
  
