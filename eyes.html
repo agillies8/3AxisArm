@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script>
+  $(document).ready(function(){
+        $(".move-area").mousemove(function(event) {
+          var eye = $(".eye");
+          console.log("eyeseen")
+          var x = (eye.offset().left) + (eye.width() / 2);
+          var y = (eye.offset().top) + (eye.height() / 2);
+          var rad = Math.atan2(event.pageX - x, event.pageY - y);
+          var rot = (rad * (180 / Math.PI) * -1) + 180;
+          eye.css({
+            '-webkit-transform': 'rotate(' + rot + 'deg)',
+            '-moz-transform': 'rotate(' + rot + 'deg)',
+            '-ms-transform': 'rotate(' + rot + 'deg)',
+            'transform': 'rotate(' + rot + 'deg)'
+          });
+        });
+  });
+      </script>
+  </head>
+  <body>
+
+    <section class="move-area">
+        <div class='.container'>
+          <div class='eye'></div>
+          <div class='eye'></div>
+        </div>
+      </section>
+
+
+</body>
+</html>

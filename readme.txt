@@ -11,7 +11,6 @@ TF tree and robot state publisher:
 http://wiki.ros.org/tf/Tutorials/Adding%20a%20frame%20%28Python%29
 
 
-
 Visualizing sensor in Rviz. And in RQT_Plot
 Setting up 9-axis-IMU (Razor and also adafruit one)
 
